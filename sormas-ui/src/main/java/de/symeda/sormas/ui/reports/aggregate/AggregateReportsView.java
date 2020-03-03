@@ -30,6 +30,7 @@ import de.symeda.sormas.api.user.UserRight;
 import de.symeda.sormas.api.user.UserRole;
 import de.symeda.sormas.api.utils.DateHelper;
 import de.symeda.sormas.api.utils.EpiWeek;
+import de.symeda.sormas.ui.ControllerProvider;
 import de.symeda.sormas.ui.UserProvider;
 import de.symeda.sormas.ui.ViewModelProviders;
 import de.symeda.sormas.ui.utils.AbstractView;
@@ -46,6 +47,7 @@ public class AggregateReportsView extends AbstractView {
 	private AggregateReportsGrid grid;
 	private VerticalLayout gridLayout;
 	private Button btnExport;
+	private Button btnCreate;
 
 	// Filters
 	private HorizontalLayout hlFirstFilterRow;
@@ -83,7 +85,14 @@ public class AggregateReportsView extends AbstractView {
 
 		addComponent(gridLayout);
 
-		if (UserProvider.getCurrent().hasUserRight(UserRight.AGGREGATE_REPORT_EXPORT)) {
+		if (UserProvider.getCurrent().hasUserRight(UserRight.AGGREGATE_REPORT_CREATE)) {
+			btnCreate = new Button(I18nProperties.getCaption(Captions.aggregateReportNewAggregateReport));
+			btnCreate.setId("create");
+			btnCreate.addStyleName(ValoTheme.BUTTON_PRIMARY);
+			btnCreate.setIcon(VaadinIcons.PLUS_CIRCLE);
+			btnCreate.addClickListener(e -> ControllerProvider.getAggregateReportController().create());
+			addHeaderComponent(btnCreate);
+
 			btnExport = new Button(I18nProperties.getCaption(Captions.export));
 			btnExport.addStyleName(ValoTheme.BUTTON_PRIMARY);
 			btnExport.setIcon(VaadinIcons.DOWNLOAD);

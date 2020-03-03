@@ -73,7 +73,11 @@ public interface Captions {
 	public static String AggregateReport_disease = "AggregateReport.disease";
 	public static String AggregateReport_labConfirmations = "AggregateReport.labConfirmations";
 	public static String AggregateReport_newCases = "AggregateReport.newCases";
+	public static String aggregateReportDeathsShort = "aggregateReportDeathsShort";
+	public static String aggregateReportLabConfirmationsShort = "aggregateReportLabConfirmationsShort";
 	public static String aggregateReportLastWeek = "aggregateReportLastWeek";
+	public static String aggregateReportNewAggregateReport = "aggregateReportNewAggregateReport";
+	public static String aggregateReportNewCasesShort = "aggregateReportNewCasesShort";
 	public static String aggregateReportThisWeek = "aggregateReportThisWeek";
 	public static String all = "all";
 	public static String bulkActions = "bulkActions";
