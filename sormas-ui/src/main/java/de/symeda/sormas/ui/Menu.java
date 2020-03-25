@@ -75,9 +75,9 @@ public class Menu extends CssLayout {
         top.setDefaultComponentAlignment(Alignment.TOP_CENTER);
         top.addStyleName(ValoTheme.MENU_TITLE);
         top.setSpacing(true);
-        Label title = new Label("SORMAS");
+        Label title = new Label("CPMS");
         title.setSizeUndefined();
-        Image image = new Image(null, new ThemeResource("img/sormas-logo.png"));
+        Image image = new Image(null, new ThemeResource("img/moh-logo.png"));
         CssStyles.style(image, ValoTheme.MENU_LOGO, ValoTheme.BUTTON_LINK);
         image.addClickListener(new MouseEvents.ClickListener() {
 			@Override

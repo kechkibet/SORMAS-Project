@@ -120,9 +120,9 @@ public class LoginScreen extends CssLayout {
 		final HorizontalLayout titleLayout = new HorizontalLayout();
 		titleLayout.setDefaultComponentAlignment(Alignment.MIDDLE_LEFT);
 		titleLayout.setSpacing(false);
-		Label title = new Label("SORMAS");
+		Label title = new Label("CPMS");
 		CssStyles.style(title, CssStyles.H1, CssStyles.VSPACE_NONE, CssStyles.VSPACE_TOP_NONE, CssStyles.HSPACE_LEFT_3);
-		Image image = new Image(null, new ThemeResource("img/sormas-logo.png"));
+		Image image = new Image(null, new ThemeResource("img/moh-logo.png"));
 		titleLayout.addComponent(image);
 		titleLayout.addComponent(title);
 		loginFormLayout.addComponent(titleLayout);
@@ -225,7 +225,7 @@ public class LoginScreen extends CssLayout {
 		innerLayout.setSizeUndefined();
 		innerLayout.setSpacing(false);
 
-		Image img = new Image(null, new ThemeResource("img/sormas-logo-big-text.png"));
+		Image img = new Image(null, new ThemeResource("img/moh-logo-big-text.png"));
 		img.setWidth(320, Unit.PIXELS);
 		innerLayout.addComponent(img);
 		innerLayout.setComponentAlignment(img, Alignment.TOP_CENTER);
@@ -250,25 +250,25 @@ public class LoginScreen extends CssLayout {
 		poweredByLabel.addStyleNames(CssStyles.LOGIN_HEADLINELABEL, CssStyles.H2);
 		loginSidebarLayout.addComponent(poweredByLabel);
 
-		VerticalLayout poweredByLayout = new VerticalLayout();
-		poweredByLayout.addStyleNames(CssStyles.LAYOUT_SPACIOUS, CssStyles.LOGIN_LOGOCONTAINER);
-		poweredByLayout.setDefaultComponentAlignment(Alignment.MIDDLE_CENTER);
-		poweredByLayout.setSizeUndefined();
-		poweredByLayout.setSpacing(false);
-
-		Image imgHzi = new Image(null, new ThemeResource("img/hzi-logo.png"));
-		imgHzi.setWidth(LOGO_WIDTH, Unit.PIXELS);
-		poweredByLayout.addComponent(imgHzi);
-
-		Image imgSymeda = new Image(null, new ThemeResource("img/symeda-logo.png"));
-		imgSymeda.setWidth(LOGO_WIDTH, Unit.PIXELS);
-		poweredByLayout.addComponent(imgSymeda);
-
-		Image imgGiz = new Image(null, new ThemeResource("img/giz-logo.png"));
-		imgGiz.setWidth(LOGO_WIDTH, Unit.PIXELS);
-		poweredByLayout.addComponent(imgGiz);
-
-		loginSidebarLayout.addComponent(poweredByLayout);
+//		VerticalLayout poweredByLayout = new VerticalLayout();
+//		poweredByLayout.addStyleNames(CssStyles.LAYOUT_SPACIOUS, CssStyles.LOGIN_LOGOCONTAINER);
+//		poweredByLayout.setDefaultComponentAlignment(Alignment.MIDDLE_CENTER);
+//		poweredByLayout.setSizeUndefined();
+//		poweredByLayout.setSpacing(false);
+//
+//		Image imgHzi = new Image(null, new ThemeResource("img/hzi-logo.png"));
+//		imgHzi.setWidth(LOGO_WIDTH, Unit.PIXELS);
+//		poweredByLayout.addComponent(imgHzi);
+//
+//		Image imgSymeda = new Image(null, new ThemeResource("img/symeda-logo.png"));
+//		imgSymeda.setWidth(LOGO_WIDTH, Unit.PIXELS);
+//		poweredByLayout.addComponent(imgSymeda);
+//
+//		Image imgGiz = new Image(null, new ThemeResource("img/giz-logo.png"));
+//		imgGiz.setWidth(LOGO_WIDTH, Unit.PIXELS);
+//		poweredByLayout.addComponent(imgGiz);
+//
+//		loginSidebarLayout.addComponent(poweredByLayout);
 
 		Label customHtmlLabel = new Label();
 		customHtmlLabel.setContentMode(ContentMode.HTML);

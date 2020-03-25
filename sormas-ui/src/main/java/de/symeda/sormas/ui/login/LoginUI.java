@@ -61,7 +61,7 @@ public class LoginUI extends UI {
 
 		VaadinSession.getCurrent().setConverterFactory(new SormasDefaultConverterFactory());
 
-		getPage().setTitle("SORMAS");
+		getPage().setTitle("CPMS");
 
 		setContent(new LoginScreen(new LoginListener() {
 			@Override
